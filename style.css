@@ -1,0 +1,206 @@
+/* GLOBAL SETTINGS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* HEADER */
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url('img/columns.jpeg') center/cover no-repeat;
+  position: relative;
+  color: white;
+}
+
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 160px;
+  height: auto;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 12px;
+}
+
+.nav-links ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.nav-links ul li a:hover {
+  color: #ff4d4d;
+}
+
+.text-box {
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text-box h1 {
+  font-size: 70px;
+  letter-spacing: 2px;
+}
+
+.text-box h2 {
+  color: #ff4d4d;
+  margin: 10px 0;
+  font-size: 28px;
+}
+
+.text-box p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.hero-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border: 2px solid #fff;
+  padding: 14px 40px;
+  font-size: 16px;
+  transition: 0.5s;
+}
+
+.hero-btn:hover {
+  background: #ff4d4d;
+  border-color: #ff4d4d;
+}
+
+/* ABOUT SECTION */
+.about {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  padding: 100px 0;
+  background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)),
+              url('img/images\ \(14\).jpeg') center/cover no-repeat;
+  background-attachment: fixed;
+}
+
+.about h1 {
+  font-size: 42px;
+  color: #222;
+}
+
+.about p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.row {
+  display: transform;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.about-us {
+  flex: 1;
+  min-width: 280px;
+  background: #fff3f3;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.about-us:hover {
+  transform: translateY(-10px);
+}
+
+/* SERVICES SECTION */
+.service {
+  width: 100%;
+  text-align: center;
+  padding: 120px 0;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+              url('img/images-18.jpeg') center/cover no-repeat;
+  background-attachment: fixed;
+  color: white;
+}
+
+.service h1 {
+  font-size: 42px;
+  margin-bottom: 30px;
+}
+
+.service ul {
+  list-style: none;
+  padding: 0;
+}
+
+.service ul li {
+  font-size: 22px;
+  margin: 15px 0;
+  transition: color 0.3s;
+}
+
+.service ul li:hover {
+  color: #ff4d4d;
+}
+
+/* CONTACT SECTION */
+.contact {
+  width: 100%;
+  text-align: center;
+  padding: 120px 0;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+              url('img/columns3.jpg') center/cover no-repeat;
+  background-attachment: fixed;
+  color: white;
+}
+
+.contact h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* RESPONSIVE DESIGN */
+@media(max-width: 700px) {
+  .text-box h1 {
+    font-size: 36px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .about, .service, .contact {
+    padding: 80px 20px;
+  }
+}
